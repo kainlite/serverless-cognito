@@ -10,12 +10,8 @@ variable "email_address_arn" {
   default = "arn:aws:ses:us-east-1:894527626897:identity/kainlite@gmail.com"
 }
 
-variable "cognito_user_pool_name" {
-  default = "api-skynetng-pw"
-}
-
 variable "domain_name" {
-  default = "api.skynetng.pw"
+  default = "apitest.skynetng.pw"
 }
 
 variable "log_retention_in_days" {

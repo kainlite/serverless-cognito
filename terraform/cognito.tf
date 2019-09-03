@@ -1,5 +1,5 @@
 resource "aws_cognito_user_pool" "pool" {
-  name = "api-skynetng-pw"
+  name = replace(var.domain_name, ".", "-")
 
   username_attributes = ["email"]
 
@@ -20,7 +20,7 @@ resource "aws_cognito_user_pool_client" "client" {
 }
 
 data "aws_cognito_user_pools" "this" {
-  name = var.cognito_user_pool_name
+  name = replace(var.domain_name, ".", "-")
 
   depends_on = ["aws_cognito_user_pool.pool"]
 }

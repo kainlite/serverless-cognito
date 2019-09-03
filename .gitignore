@@ -7,3 +7,5 @@ config.sh
 .vscode/
 main
 .terraform
+**/vendor/*
+env

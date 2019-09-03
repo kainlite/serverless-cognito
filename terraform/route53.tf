@@ -1,5 +1,8 @@
 data "aws_route53_zone" "zone" {
-  name = substr(var.domain_name, 4, -1)
+  # When doing this like this, it's often useful to test it with
+  # `terraform console` for example for xxx.skynetng.pw or anything.skynetng.pw
+  # it will return just skynetng.pw, it's a simple way to remove the subdomain
+  name = join(".", slice(split(".", var.domain_name), 1, 3))
 }
 
 resource "aws_route53_record" "api" {
