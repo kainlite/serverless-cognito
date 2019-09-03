@@ -1,0 +1,9 @@
+*.pyc
+*.zip
+*.tfstate
+*.tfstate.*
+venv
+config.sh
+.vscode/
+main
+.terraform
