@@ -1,7 +1,7 @@
 FROM golang:alpine
 MAINTAINER "kainlite <kainlite@gmail.com>"
 
-ARG TERRAFORM_VERSION=0.12.7
+ARG TERRAFORM_VERSION=0.12.8
 ENV TERRAFORM_VERSION=$TERRAFORM_VERSION
 
 RUN apk --no-cache add curl git unzip gcc g++ make ca-certificates && \
