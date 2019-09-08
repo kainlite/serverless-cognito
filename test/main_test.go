@@ -12,8 +12,8 @@ import (
 	test_structure "github.com/gruntwork-io/terratest/modules/test-structure"
 )
 
-// An example of how to test the Terraform module in examples/terraform-aws-example using Terratest.
-func TestTerraformAwsExample(t *testing.T) {
+// Main function, define stages, and run.
+func TestTerraformAws(t *testing.T) {
 	t.Parallel()
 
 	// Pick a random AWS region to test in. This helps ensure your code works in all regions.
