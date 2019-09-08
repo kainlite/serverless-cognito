@@ -1,7 +1,3 @@
-variable "profile_name" {
-  default = "default"
-}
-
 variable "region" {
   default = "us-east-1"
 }
@@ -11,7 +7,7 @@ variable "email_address_arn" {
 }
 
 variable "domain_name" {
-  default = "apitest.skynetng.pw"
+  default = "api.skynetng.pw"
 }
 
 variable "log_retention_in_days" {
